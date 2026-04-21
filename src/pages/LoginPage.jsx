@@ -26,9 +26,9 @@ export default function LoginPage() {
   return (
     <div className="flex min-h-screen items-center justify-center px-4 py-10">
       <div className="grid w-full max-w-6xl gap-8 lg:grid-cols-[1.15fr_0.85fr]">
-        <section className="panel relative overflow-hidden p-8 sm:p-10">
+        <section className="panel relative flex min-h-[640px] flex-col overflow-hidden p-8 sm:p-10">
           <div className="absolute inset-0 bg-gradient-to-br from-brand-50/60 via-transparent to-slate-100" />
-          <div className="relative">
+          <div className="relative flex flex-1 flex-col">
             <div className="inline-flex items-center gap-3 rounded-full border border-brand-100 bg-brand-50 px-4 py-2 text-sm font-medium text-brand-700">
               <ShieldCheck className="h-4 w-4" />
               Internal Security Lab
@@ -55,6 +55,10 @@ export default function LoginPage() {
                 <p className="text-sm text-slate-500">Review</p>
                 <p className="mt-2 text-xl font-semibold text-slate-900">Quarterly</p>
               </div>
+            </div>
+
+            <div className="mt-auto pt-10 text-left text-sm font-medium text-slate-400">
+              Created by lindachrigui
             </div>
           </div>
         </section>
