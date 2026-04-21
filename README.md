@@ -98,3 +98,5 @@ Ce lab est strictement educatif et defensif. Il sert a illustrer comment des inf
 Le detail de la cachette et de la resolution se trouve dans [WALKTHROUGH.md](./WALKTHROUGH.md).
 
 # secure
+coordonnées : 
+mdp : DemoAccess!2026
