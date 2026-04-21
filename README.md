@@ -29,22 +29,31 @@ npm run dev
 
 Puis ouvrir l'URL affichee par Vite, en general `http://localhost:5173`.
 
-## Deploiement GitHub Pages
+## Deploiement Vercel
 
-Le projet est configure pour etre deploye sur GitHub Pages depuis le depot :
+Le projet est maintenant adapte a un hebergement Vercel standard.
 
-`https://github.com/lindachrigui/secure`
+### Option 1. Import depuis GitHub
 
-Le workflow deploiement est dans `.github/workflows/deploy.yml`.
+1. ouvrir `https://vercel.com/new`
+2. importer le depot `lindachrigui/secure`
+3. laisser les parametres par defaut pour un projet `Vite`
+4. cliquer sur `Deploy`
 
-Apres un push sur `main` :
+### Option 2. Deploy avec Vercel CLI
 
-1. ouvrir l'onglet `Settings > Pages` sur GitHub
-2. verifier que la source est `GitHub Actions`
-3. attendre la fin du workflow `Deploy to GitHub Pages`
-4. l'application sera publiee sur :
+```bash
+npm install -g vercel
+vercel
+```
 
-`https://lindachrigui.github.io/secure/`
+Puis suivre l'assistant interactif.
+
+### Notes
+
+- `vercel.json` contient une rewrite vers `index.html`
+- cela permet a `React Router` de fonctionner correctement sur `/login` et `/dashboard`
+- aucune configuration speciale de base path n'est necessaire sur Vercel
 
 ## Identifiants de demonstration
 
