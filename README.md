@@ -29,6 +29,23 @@ npm run dev
 
 Puis ouvrir l'URL affichee par Vite, en general `http://localhost:5173`.
 
+## Deploiement GitHub Pages
+
+Le projet est configure pour etre deploye sur GitHub Pages depuis le depot :
+
+`https://github.com/lindachrigui/secure`
+
+Le workflow deploiement est dans `.github/workflows/deploy.yml`.
+
+Apres un push sur `main` :
+
+1. ouvrir l'onglet `Settings > Pages` sur GitHub
+2. verifier que la source est `GitHub Actions`
+3. attendre la fin du workflow `Deploy to GitHub Pages`
+4. l'application sera publiee sur :
+
+`https://lindachrigui.github.io/secure/`
+
 ## Identifiants de demonstration
 
 - Email : `analyst@northbridge.lab`
